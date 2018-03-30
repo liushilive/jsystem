@@ -860,7 +860,15 @@ public enum FrameworkOptions {
 			"",
 			false
 			),
-			
+	
+	TESTS_JAR_NAME_PREFIX(
+			"tests.jar.name.prefix",
+			"The name prefix of jar files that will be scanned for building blocks",
+			DataType.TEXT,
+			"so-",
+			true
+			),
+
 	SORT_ASSETS_TREE(
 			"sort.tests.tree",
 			"",
@@ -976,6 +984,15 @@ public enum FrameworkOptions {
 			DataType.BOOLEAN,
 			false,
 			false),
+	
+	CONTEXT_MENU_PLUGIN_CLASSES(
+			"context.menu.plugin.classes",
+			"List of classes of context menu plugins",			
+			DataType.SEARCH_AND_MULTY_SELECT_LIST, 
+			"",
+			true, 
+			new String[] { "jsystem.treeui.teststable.ContextMenuPlugin" }),
+
 	
 	SCM_PLUGIN_CLASS(
 			"scm.class",
